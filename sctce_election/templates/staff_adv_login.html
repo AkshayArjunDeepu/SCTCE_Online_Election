@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+<form name = 'staff_adv_login' action = '' method = 'POST'>
+    {% csrf_token %}
+    <center><h1>STAFF ADVISOR / PRECIDING OFFICER LOGIN</h1></center>
+    <br>
+    <br>
+    <pre> 
+ 
+    Enter first name:   <input type = 'text' name = 'first_name'><br>
+    Enter last name:    <input type = 'text' name = 'last_name'><br>
+    Enter employee ID:  <input tyep = 'text' name = 'employee_id'><br>
+    Enter election ID:  <input type = 'text' name = 'election_id'><br>
+    Enter gender:       <input type = 'text' name = 'gender'><br>
+    
+    <input type = 'submit' value = 'Click here to submit'>
+    </pre>
+</form>
+{% endblock %}
